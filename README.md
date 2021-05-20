@@ -30,3 +30,8 @@ SUBSYSTEM=="block",ACTION=="add",ENV{ID_SERIAL}=="Intenso_Slim_Line_181219000162
 To find out the serial of your device, run `sudo udevadm monitor -p` as root before plugging in your device (Use the `SERIAL_ID` from the `block` subsystem, not the one from the `usb` subsystem. It's generally the last serial you see.). Replace the user name with yours.
 
 Run `sudo udevadm control --reload-rules && sudo udevadm trigger` to reload and apply the rules without rebooting.
+
+## References
+
+- https://github.com/mbottini/concept2haskell/blob/master/writeup.md
+- https://git.gutmet.org/pm5conv/dataformat
